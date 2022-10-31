@@ -12,11 +12,10 @@ import web.service.CarService;
 import java.util.List;
 
 @Controller
-@RequestMapping("/cars")
 public class CarController {
 
-    /*в конце URL придется поставить наклонную )) */
-    @GetMapping("/")
+
+    @GetMapping("/cars")
     public String getCars(@RequestParam(value = "count",defaultValue = "0") Integer count, Model model) {
         List<Car> carList = CarService.getCarList();
         model.addAttribute("count",count);
