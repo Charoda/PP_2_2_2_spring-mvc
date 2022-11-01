@@ -1,5 +1,7 @@
 package web.Model;
 
+import java.sql.ResultSet;
+
 public class Car {
 
     private String model;
